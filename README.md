@@ -237,17 +237,33 @@ npm run dev
 
 ![My Portfolio Screenshot](./assets/login.PNG)
 <br>
+
+---
+
 ![My Portfolio Screenshot](./assets/home2.PNG)
 <br>
+
+---
+
 ![My Portfolio Screenshot](./assets/home3.PNG)
 <b3>
+
+---
+
 ![My Portfolio Screenshot](./assets/home4.PNG)
+
+---
 
 ### Journals
 ![My Portfolio Screenshot](./assets/jonal.PNG)
 
+---
+
 <br>
+
 ![My Portfolio Screenshot](./assets/jonal2.PNG)
+
+---
 
 ### Learn 
 ![My Portfolio Screenshot](./assets/learn.PNG)
@@ -257,14 +273,17 @@ npm run dev
 
 ## USSD Gallery Using Africa's Talking API
 
-![My Portfolio Screenshot](./assets/ussd1.PNG)
+![My Portfolio Screenshot](./assets/afrii4.PNG)
+
+---
 
 <br>
-![My Portfolio Screenshot](./assets/ussd3.PNG)
+
+![My Portfolio Screenshot](./assets/afirc2.PNG)
 
 <br>
 
-![My Portfolio Screenshot](./assets/ussd2.PNG)
+![My Portfolio Screenshot](./assets/afri4.PNG)
 
 ---
 
