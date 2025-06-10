@@ -12,6 +12,10 @@ It leverages  the Llama 3.3 70B instruct model from Meta to deliver context-awar
 
 ---
 
+![My Portfolio Screenshot](./assets/home.PNG)
+
+---
+
 ## 📜 Table of Contents
 
 * [Overview](#overview)
