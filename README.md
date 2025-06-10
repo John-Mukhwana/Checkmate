@@ -38,7 +38,7 @@ graph TD
         UI[Mental Health Chat Interface]
     end
 
-    subgraph Backend["🌐 Backend (Friendli.ai API)"]
+    subgraph Backend["🌐 Backend (Open API)"]
         API[Friendli.ai API]
     end
 
@@ -72,7 +72,7 @@ graph TD
 
 * **User**: Interacts with the chatbot for mental wellness assistance.
 * **Frontend (React.js)**: Hosts the user interface for the AI-powered chatbot.
-* **Friendli.ai API**: Facilitates communication with the Llama 3.3 model.
+* **Open API**: Facilitates communication with the Llama 3.3 model.
 * **Llama 3.3 70B Model**: Processes mental health prompts and returns emotionally aware responses.
 
 ---
@@ -97,7 +97,9 @@ graph TD
 * **Sentiment Analysis:** Detects tone (e.g., stressed, confused, sad) for better response tuning.
 * **Multilingual Support:** Supports English, French, Kiswahili, Arabic, and more.
 * **Responsive UI:** Cross-device chat experience.
-
+* **Responsive UI:** Cross-device chat experience.
+* **Connect with Wallet or Google:** Wallet-based and Google OAuth login options.
+* **Journal Storage:** Journals and emails are hashed and securely stored on-chain and in IPFS.
 ---
 
 ## System Architecture
@@ -128,12 +130,52 @@ sequenceDiagram
 
 ---
 
+## USSD + SMS Flow (Africa's Talking)
+
+```plaintext
+1. User Dials USSD Code (e.g. *384*123#)
+   ↓
+2. Africa’s Talking sends POST to /api/ussd
+   ↓
+3. Backend processes text menu options and logic
+   ↓
+4. If needed, send SMS via Africa’s Talking SMS API
+   ↓
+5. Backend responds with USSD (CON or END)
+   ↓
+6. User sees message and receives SMS with support content
+```
+--- 
+
+### Sample SMS Payload:
+
+```ts
+await axios.post(
+  'https://api.africastalking.com/version1/messaging',
+  qs.stringify({
+    username: 'your_AT_username',
+    to: '+254712345678',
+    message: 'Thank you for reaching out. Try breathing deeply, and call 1195 for support.',
+    bulkSMSMode: 1,
+  }),
+  {
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'apiKey': process.env.AT_API_KEY,
+    }
+  }
+);
+```
+
+---
+
 ## Getting Started
 
 ### Prerequisites
 
 * Node.js and npm installed
 * A Friendli.ai API token
+* Africa’s Talking API Key
 
 ---
 
@@ -177,6 +219,8 @@ npm run dev
 3. Select your preferred language.
 4. Read through AI-generated reflective responses.
 5. Optionally, follow up for more insights.
+6. Use USSD code to access via mobile.
+7. Receive support via SMS if applicable.
 
 ---
 
