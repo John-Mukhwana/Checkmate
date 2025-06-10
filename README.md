@@ -24,6 +24,7 @@ It leverages  the Llama 3.3 70B instruct model from Meta to deliver context-awar
 * [Getting Started](#getting-started)
 * [Environment Setup](#environment-setup)
 * [Usage](#usage)
+* [Gallery](#gallery)
 * [Contributing](#contributing)
 
 ---
@@ -93,7 +94,8 @@ graph TD
   8. Response is shown to the user in the chat UI.
 
 ---
-
+![My Portfolio Screenshot](./assets/home2.PNG)
+---
 ## Features
 
 * **Emotional Support Guidance:** Empathetic and structured responses based on input.
@@ -133,6 +135,8 @@ sequenceDiagram
 ```
 
 ---
+![My Portfolio Screenshot](./assets/afirc2.PNG)
+---
 
 ## USSD + SMS Flow (Africa's Talking)
 
@@ -150,6 +154,8 @@ sequenceDiagram
 6. User sees message and receives SMS with support content
 ```
 --- 
+
+
 
 ### Sample SMS Payload:
 
@@ -225,6 +231,40 @@ npm run dev
 5. Optionally, follow up for more insights.
 6. Use USSD code to access via mobile.
 7. Receive support via SMS if applicable.
+
+---
+## Web application Gallery
+
+![My Portfolio Screenshot](./assets/login.PNG)
+<br>
+![My Portfolio Screenshot](./assets/home2.PNG)
+<br>
+![My Portfolio Screenshot](./assets/home3.PNG)
+<b3>
+![My Portfolio Screenshot](./assets/home4.PNG)
+
+### Journals
+![My Portfolio Screenshot](./assets/jonal.PNG)
+
+<br>
+![My Portfolio Screenshot](./assets/jonal2.PNG)
+
+### Learn 
+![My Portfolio Screenshot](./assets/learn.PNG)
+
+
+---
+
+## USSD Gallery Using Africa's Talking API
+
+![My Portfolio Screenshot](./assets/ussd1.PNG)
+
+<br>
+![My Portfolio Screenshot](./assets/ussd3.PNG)
+
+<br>
+
+![My Portfolio Screenshot](./assets/ussd2.PNG)
 
 ---
 
