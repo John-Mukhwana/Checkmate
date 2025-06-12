@@ -8,7 +8,7 @@ It leverages  the Llama 3.3 70B instruct model from Meta to deliver context-awar
 ## Live Links🌐📶
 
 * **🚀Live Link on Vercel:** [hthttps://checkmate-mental-health.netlify.app](https://checkmate-mental-health.netlify.app/)
-* **Youtube Video :** []
+* **Youtube Video :** [https://youtu.be/th3cmiWrAl0](https://youtu.be/th3cmiWrAl0)
 
 ---
 
